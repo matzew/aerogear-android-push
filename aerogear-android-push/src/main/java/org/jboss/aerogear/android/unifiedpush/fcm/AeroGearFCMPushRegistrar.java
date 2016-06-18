@@ -147,7 +147,7 @@ public class AeroGearFCMPushRegistrar implements PushRegistrar, MetricsSender<Un
                     String token = instanceId.getToken();
 
                     deviceToken = token;
-
+Log.e(TAG, "token (" + token + ")");
                     HttpProvider httpProvider = httpProviderProvider.get(deviceRegistryURL, TIMEOUT);
                     setPasswordAuthentication(variantId, secret, httpProvider);
 
